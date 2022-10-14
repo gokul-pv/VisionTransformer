@@ -1,4 +1,4 @@
-# ViT - An Image is worth 16x16 words**
+# ViT - An Image is worth 16x16 words
 
 ### Part 1: ([Click here](./CatsVsDogs))
 
