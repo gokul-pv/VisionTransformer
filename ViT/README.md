@@ -13,7 +13,7 @@ The overall architecture can be described easily in five simple steps:
 4. Pass through a Transformer Encoder and get the output values for each of the [CLS] tokens.
 5. Pass the representations of [CLS] tokens through an MLP Head to get final class predictions. 
 
-![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/ViT/Images/vit-01.png)
+![](https://github.com/gokul-pv/VisionTransformer/blob/main/ViT/Images/vit-01.png)
 
 ## Step 1: Patch embedding
 
@@ -101,7 +101,7 @@ class ViTEmbeddings(nn.Module):
 
 This process can be visualized as below:
 
-![img](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/ViT/Images/vit-03.png)
+![img](https://github.com/gokul-pv/VisionTransformer/blob/main/ViT/Images/vit-03.png)
 
 So [CLS] token is a vector of size 1x768, and nn.Parameter makes it a  learnable parameter. We prepend it to the Patch Embedding and add  Positional Embeddings. 
 
@@ -115,13 +115,13 @@ Positional Embedding (768x197) + Intermediate_Value (768x197) → Combined Embed
 
  It is interesting to see what these position embeddings look like after training:
 
-![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/ViT/Images/visualizing-positional-encodings-vit.png)
+![](https://github.com/gokul-pv/VisionTransformer/blob/main/ViT/Images/visualizing-positional-encodings-vit.png)
 
 
 
 ## Step 3: Transformer Encoder
 
-![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/ViT/Images/vit-07.png)
+![](https://github.com/gokul-pv/VisionTransformer/blob/main/ViT/Images/vit-07.png)
 
 
 
@@ -300,7 +300,7 @@ class ViTOutput(nn.Module):
 
 
 
-The class **ViTLayer** combines all the block and returns the final output as  shown in this [image](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/ViT/Images/vit-07.png)
+The class **ViTLayer** combines all the block and returns the final output as  shown in this [image](https://github.com/gokul-pv/VisionTransformer/blob/main/ViT/Images/vit-07.png)
 
 ```python
 class ViTLayer(nn.Module):
@@ -401,7 +401,7 @@ class ViTEncoder(nn.Module):
 
 The **whole process** would be:
 
-![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/ViT/Images/vit-06.png)
+![](https://github.com/gokul-pv/VisionTransformer/blob/main/ViT/Images/vit-06.png)
 
 Notice that the 12th block returns 197x768, but the MLP head receives 768 as input! This is the last line of the code of the Vision Transformer's forward function!
 

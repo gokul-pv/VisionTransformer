@@ -8,13 +8,13 @@ The train folder contains 25,000 images of dogs and cats. Each image in  this fo
 
 ## Data Visualization
 
-![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/Images/train.png)
+![](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/Images/train.png)
 
 
 
 ## Model using ViT-pytorch and Linformer
 
-- Link to [notebook](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/EVA6_Session_13_ViT.ipynb) 
+- Link to [notebook](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/VisionTranformer.ipynb) 
 
 ## Model Parameters
 
@@ -336,7 +336,7 @@ Epoch : 20 - loss : 0.5866 - acc: 0.6841 - val_loss : 0.5992 - val_acc: 0.6685
 
 **Loss and Accuracy plot**
 
-![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/Images/loss.png)
+![](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/Images/loss.png)
 
 
 
@@ -344,9 +344,9 @@ Epoch : 20 - loss : 0.5866 - acc: 0.6841 - val_loss : 0.5992 - val_acc: 0.6685
 
 
 
-| ![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/Images/test_04.PNG) | ![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/Images/test_01.PNG)                       Misclassified |
+| ![](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/Images/test_04.PNG) | ![](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/Images/test_01.PNG)                       Misclassified |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/Images/test_02.PNG) | ![](https://github.com/gokul-pv/EVA6_Assignments_Session13/blob/main/CatsVsDogs/Images/test_03.PNG) |
+| ![](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/Images/test_02.PNG) | ![](https://github.com/gokul-pv/VisionTransformer/blob/main/CatsVsDogs/Images/test_03.PNG) |
 
 
 
